@@ -3,6 +3,8 @@ from flask_login import UserMixin
 from sqlalchemy.sql import func
 
 
+#============================================================== Create models for User and Notes
+
 class Note(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     data = db.Column(db.String(10000))
